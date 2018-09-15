@@ -1,0 +1,42 @@
+﻿@model freeQuote3.Models.GoodsReceiptVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GoodsReceiptVM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.specInstruct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.specInstruct)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.commodity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.commodity)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GoodsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

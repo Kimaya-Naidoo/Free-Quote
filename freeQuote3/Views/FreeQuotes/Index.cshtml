@@ -1,0 +1,135 @@
+﻿@model IEnumerable<freeQuote3.Models.FreeQuote>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ConsumerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.phoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.delDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.equipment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CargoType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dimension)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.commodity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.specInstruct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CollectionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.testtext)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.two)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Collection)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dropoff)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.final)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ConsumerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.phoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.delDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.equipment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CargoType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.weight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dimension)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.commodity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.specInstruct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CollectionDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.testtext)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.two)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Collection)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dropoff)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.final)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.freeQuote }) |
+            @Html.ActionLink("Details", "Details", new { id=item.freeQuote }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.freeQuote })
+        </td>
+    </tr>
+}
+
+</table>

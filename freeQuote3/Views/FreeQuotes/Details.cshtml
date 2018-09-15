@@ -1,0 +1,162 @@
+﻿@model freeQuote3.Models.FreeQuote
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FreeQuote</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConsumerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConsumerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.delDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.delDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.equipment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.equipment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CargoType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CargoType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dimension)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dimension)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.commodity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.commodity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.specInstruct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.specInstruct)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CollectionDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CollectionDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.testtext)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.testtext)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.two)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.two)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Collection)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Collection)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dropoff)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dropoff)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.final)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.final)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.freeQuote }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
